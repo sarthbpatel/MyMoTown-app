@@ -18,7 +18,7 @@ MyMoTown is a webapp where you can find and share social activities, sporting ev
 ## **Features**
 With MyMoTown, you can:
 - Find and share local social activities, sporting events, resturants, bars, clubs, etc.
-- - This includes an event name, description, pictures, event time(s), and more
+- This includes an event name, description, pictures, event time(s), and more
 - See how many people are going to an event
 - See the ratings and reviews of events as well as review them yourself
 - View all the events you have created with "Your Events" button
