@@ -47,4 +47,4 @@ Rohit Chivukula, Nicholas Kennedy, Carter Kiss, Sarth Patel, Justin Scott, Dylan
 
 
 
-##### Thank you to all the authors for investing your time contributing to our project! 
+#### Thank you to all the authors for investing your time contributing to our project! 
