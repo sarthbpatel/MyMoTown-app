@@ -1,0 +1,15 @@
+<app-auth-background></app-auth-background>
+
+<div class="login-container">
+	<a routerLink="/home" class="continue-link">Continue as guest &gt;</a>
+	<h1 class="header">MyMotown</h1>
+
+	<form [formGroup]="loginForm" class="login-form" (ngSubmit)="login()">
+		<input type="email" placeholder="Email" formControlName="email">
+		<input type="password" placeholder="Password" formControlName="password">
+
+		<input type="submit" value="Login">
+	</form>
+
+	<a routerLink="/signup">Don't have an account? Sign up here</a>
+</div>

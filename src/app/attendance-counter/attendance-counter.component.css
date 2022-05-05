@@ -1,0 +1,29 @@
+#container {
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	background-color: #ffffff;
+	cursor: pointer;
+	border: none;
+}
+
+.container:hover svg,
+.container:hover span {
+	fill: #00000055;
+	color: #00000055;
+}
+
+svg {
+	width: 24px;
+	height: 24px;
+	transition: all 0.2s ease-in-out;
+	fill: #0000007d;
+}
+
+span {
+	margin-left: 4px;
+	color: #0000007d;
+	font-size: 18px;
+	font-weight: 700;
+	transition: all 0.1s ease-in-out;
+}

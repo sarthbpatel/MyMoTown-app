@@ -1,0 +1,65 @@
+
+.container {
+	display: block;
+	width: clamp(484px, 50%, 760px);
+	height: 410px;
+	padding: 16px;
+	border-radius: 8px;
+	box-shadow: 0 0 12px -2px rgba(0, 0, 0, .4),
+	            0 0 16px -6px rgba(0, 0, 0, .15);
+	cursor: pointer;
+	margin: 32px auto;
+	
+}
+
+.description {
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 16px 0 0 0;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.images {
+	background-color: #000000;
+	border-radius: 8px;
+	height: 212px;
+	overflow: hidden;
+	margin: 16px 0;
+}
+
+.images img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.report-btn {
+	width: 24px;
+	fill: var(--icon-color);
+	cursor: pointer;
+	transition: all 0.1s ease-in-out;
+}
+
+.report-btn:hover {
+	fill: #00000055;
+}
+
+.title {
+	color: var(--blue);
+	font-size: 28px;
+	font-weight: 650;
+}

@@ -1,0 +1,19 @@
+<app-header-layout></app-header-layout>
+
+<app-filter (filter)="filter($event)"></app-filter>
+
+<ng-container *ngIf="postObservable">
+	<cdk-virtual-scroll-viewport appendOnly itemSize="410" class="post-container">
+		<app-post
+			*cdkVirtualFor="let post of (filteredPosts | async)?.slice()?.reverse()"
+			[title]="post.title"
+			[image]="post.images[0]"
+			[rating]="postService.getRating(post)"
+			[description]="post.description"
+			[attendance]="post.attendanceCount"
+			link="/view-event/{{ post.id }}"
+			[postID]="post.id"
+			[paymentTypes]="post.paymentTypes"
+		></app-post>
+	</cdk-virtual-scroll-viewport>
+</ng-container>

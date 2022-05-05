@@ -1,0 +1,8 @@
+<div 
+	#ratingDiv
+	(mouseleave)="rating = quantity"
+	(mousemove)="hoverRating($event, ratingDiv)"
+	(click)="selectRating()"
+	class="rating"
+	style.background="linear-gradient(to right, var(--gold) {{ rating / .05 }}%, var(--icon-color) {{ rating / .05 }}%)"
+></div>

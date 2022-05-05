@@ -1,0 +1,85 @@
+<!-- This component contains plan-my-night feature -->
+<!-- Created four questions based on which a user can plan there night -->
+<!-- Once the users answer all four questions, the recommended events will be shown-->
+
+<app-auth-background></app-auth-background>
+
+<div class="planmynight-container">    
+    <h1 class="header">Plan My Night!</h1>
+
+    <!-- Routing Back to homepage -->
+    <a class="button2" routerLink="/home" id="back-button">Go Back</a>
+
+    <!-- Question 1 -->
+    <h4 class="Question">How about a nice sumptuous meal?</h4>
+      <!-- Created filtered Options -->
+    <div class="section">
+    <form [formGroup]="filterForm" class="container">
+		<div class="item">
+            <input type="checkbox" id="1Option1" (change)="onFilterSelect()" formControlName="1Option1">
+            <label for="1Option1">YES</label>
+        </div>
+        <div class="item">
+            <input type="checkbox" id="1Option2" (change)="onFilterSelect()" formControlName="1Option2">
+            <label for="1Option2">No</label>
+        </div>
+        <div class="item">
+            <input type="checkbox" id="1Option3" (change)="onFilterSelect()" formControlName="1Option3">
+            <label for="1Option3">Maybe</label>
+        </div>   
+    </form>
+
+    <!-- Question 2 -->
+    <h4 class="Question">Feel like partying tonight?</h4>
+    <!-- Created filtered Options -->
+    <form [formGroup]="filterForm" class="container">
+		<div class="item">
+            <input type="checkbox" id="2Option1" (change)="onFilterSelect()" formControlName="2Option1">
+            <label for="2Option1">YES</label>
+        </div>
+        <div class="item">
+            <input type="checkbox" id="2Option2" (change)="onFilterSelect()" formControlName="2Option2">
+            <label for="2Option2">No</label>
+        </div>
+        <div class="item">
+            <input type="checkbox" id="2Option3" (change)="onFilterSelect()" formControlName="2Option3">
+            <label for="2Option3">Maybe</label>
+        </div>   
+    </form>
+
+    <!-- Question 3 -->
+    <h4 class="Question">How about some sports activities?</h4>
+    <!-- Created filtered Options -->
+    <form [formGroup]="filterForm" class="container">
+		<div class="item">
+            <input type="checkbox" id="3Option1" (change)="onFilterSelect()" formControlName="3Option1">
+            <label for="3Option1">YES</label>
+        </div>
+        <div class="item">
+            <input type="checkbox" id="3Option2" (change)="onFilterSelect()" formControlName="3Option2">
+            <label for="3Option2">No</label>
+        </div>
+        <div class="item">
+            <input type="checkbox" id="3Option3" (change)="onFilterSelect()" formControlName="3Option3">
+            <label for="3Option3">Maybe</label>
+        </div>
+    </form>
+
+    <!-- Question 4 -->
+    <h4 class="Question">Are you up to be adventurous?</h4>
+    <!-- Created filtered Options -->
+    <form [formGroup]="filterForm" class="container">
+		<div class="item">
+            <input type="checkbox" id="4Option1" (change)="onFilterSelect()" formControlName="4Option1">
+            <label for="4Option1">YES</label>
+        </div>
+        <div class="item">
+            <input type="checkbox" id="4Option2" (change)="onFilterSelect()" formControlName="4Option2">
+            <label for="4Option2">No</label>
+        </div>
+        <div class="item">
+            <input type="checkbox" id="4Option3" (change)="onFilterSelect()" formControlName="4Option3">
+            <label for="4Option3">Maybe</label>
+        </div>
+    </form>
+</div>

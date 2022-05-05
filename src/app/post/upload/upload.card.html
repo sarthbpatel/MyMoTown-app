@@ -1,0 +1,21 @@
+<app-auth-background></app-auth-background>
+
+<img src="../../assets/images/wvucamera.png">
+
+<a class="button2" routerLink="/home">Cancel</a>
+
+
+<div class="container">
+
+    <p class = "text">
+        Here you can post all your favorite (or not so favorite) events! These posts can be viewed by others using MyMotown.
+    </p>
+	<h1 class="header">Select your pics below!</h1>
+
+	<form [formGroup]="uploadForm" class="form" (ngSubmit)="upload()">
+        <form>
+            <input Type = "file">
+        </form>
+        <a routerLink="/home" class="button1">Upload</a>
+	</form>
+</div>

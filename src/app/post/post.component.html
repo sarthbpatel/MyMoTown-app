@@ -1,0 +1,20 @@
+<div class="container" [routerLink]="link">
+	<div class="header">
+		<span class="title">{{ title }}</span>
+		<app-rating [rating]="rating"></app-rating>
+	</div>
+	<div class="images">
+		<img [src]="image">
+	</div>
+	<div class="description">{{ description }}</div>
+	<div class="footer">
+		<app-attendance-counter [postID]="postID" [count]="attendance"></app-attendance-counter>
+		<a class="btn btn-small" [href]="twitterUrl">
+			Share to Twitter
+		</a>
+		<svg class="report-btn" width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M25.0528 0C24.6116 0 24.2372 0.26973 24.0803 0.651411C22.2601 1.52799 18.0302 3.51084 14.9137 4.61026C9.07872 6.6731 3.98755 7.21368 3.98755 7.21368V14.9817C3.98755 14.9817 5.72992 15.1692 8.33479 15.7326L8.37432 22.9714C8.37804 23.5383 8.88589 24.0023 9.50132 24L11.3215 23.992C11.9369 23.9874 12.4362 23.5211 12.4349 22.9497L12.3978 16.7737C13.2134 17.0148 14.0537 17.2823 14.915 17.5874C18.0302 18.688 22.2613 20.6708 24.084 21.5451C24.2397 21.9269 24.6141 22.1965 25.054 22.1965C25.6311 22.1965 26.1032 21.7325 26.1032 21.1611V1.03659C26.1019 0.466292 25.6286 0 25.0528 0Z"/>
+			<path d="M3.05595 7.30173H0V14.896H3.05595V7.30173Z"/>
+		</svg>
+	</div>
+</div>

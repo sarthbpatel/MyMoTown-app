@@ -1,0 +1,10 @@
+<!--Class that displays the header and the relevant buttons for things like logging in-->
+<div class="container">
+    <span class="title">MyMotown</span>
+    <div class="buttons">
+        <a routerLink="/plan-my-night" class="button">Plan My Night</a>
+        <a *ngIf="authService.afAuth.user | async" routerLink="/create-post" class="button">Create Post</a>
+        <a *ngIf="!(authService.afAuth.user | async)" routerLink="/login" class="button">Sign In</a>
+        <a *ngIf="authService.afAuth.user | async" routerLink="/account" class="button">Your Events</a>
+    </div>
+</div>

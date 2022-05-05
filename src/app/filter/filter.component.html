@@ -1,0 +1,65 @@
+<!-- This component filters through the posts-->
+
+<!-- Filters for different categories-->
+<form [formGroup]="filterForm" class="container filter-margin">
+    <div class="section">
+        <input class="clear-btn" type="button" value="Clear" (click)="clear()">
+    </div>
+	<div class="section">
+        <p>Category</p>
+		<div class="item">
+            <input type="checkbox" id="sports" (change)="onFilterSelect()" formControlName="sports">
+            <label for="sports">Sports</label><br>
+        </div>
+        <div class="item">
+            <input type="checkbox" id="parties" (change)="onFilterSelect()" formControlName="parties">
+            <label for="parties">Parties</label><br>
+        </div>
+        <div class="item">
+            <input type="checkbox" id="dining" (change)="onFilterSelect()" formControlName="dining">
+            <label for="dining">Dining</label><br>
+        </div>
+        <div class="item">
+            <input type="checkbox" id="adventure" (change)="onFilterSelect()" formControlName="adventure">
+            <label for="adventure">Adventure</label><br>
+        </div>
+        <div class="item">
+            <input type="checkbox" id="other" (change)="onFilterSelect()" formControlName="other">
+            <label for="other">Other</label><br>
+        </div>
+	</div>
+
+<!-- Filters for rating -->
+    <div class="section">
+        <p>Rating</p>
+		<div class="item">
+            <input type="radio" id="rating4" value="4" (change)="onFilterSelect()" formControlName="rating">
+            <app-rating rating="4"></app-rating>
+        </div>
+        <div class="item">
+            <input type="radio" id="rating3" value="3" (change)="onFilterSelect()" formControlName="rating">
+            <app-rating rating="3"></app-rating>
+        </div>
+        <div class="item">
+            <input type="radio" id="rating2" value="2" (change)="onFilterSelect()" formControlName="rating">
+            <app-rating rating="2"></app-rating>
+        </div>
+        <div class="item">
+            <input type="radio" id="rating1" value="1" (change)="onFilterSelect()" formControlName="rating">
+             <app-rating rating="1"></app-rating>
+        </div>
+	</div>
+
+<!-- Filters for payment types -->
+    <div class="section">
+        <p>Payment Type</p>
+		<div class="item">
+            <input type="checkbox" id="cash" (change)="onFilterSelect()" formControlName="cash">
+            <label for="cash">Cash</label><br>
+        </div>
+        <div class="item">
+            <input type="checkbox" id="card" (change)="onFilterSelect()" formControlName="card">
+            <label for="card">Card</label><br>
+        </div>
+	</div>
+</form>

@@ -1,0 +1,9 @@
+.rating {
+	--star-size: 24px;
+	--star-count: 5;
+	--star: url("../../assets/images/star-icon.svg");
+	width: 80px;
+	height: 16px;
+	mask: var(--star);
+	margin-right: 4px;
+}

@@ -1,0 +1,149 @@
+.container {
+	padding: 32px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-info * {
+	margin: 0 8px;
+}
+
+.home-btn {
+	display: inline-block;
+	text-decoration: none;
+	margin-bottom: 8px;
+	color: var(--icon-color);
+	cursor: pointer;
+}
+
+.home-btn:hover {
+	text-decoration: underline;
+}
+
+.images {
+	background-color: #000000;
+	border-radius: 8px;
+	height: 424px;
+	overflow: hidden;
+	margin: 16px 0;
+}
+
+.images img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.report-btn {
+	width: 24px;
+	fill: var(--icon-color);
+	cursor: pointer;
+	transition: all 0.1s ease-in-out;
+}
+
+.report-btn:hover {
+	fill: #00000055;
+}
+
+.title {
+	color: var(--blue);
+	font-size: 28px;
+	font-weight: 650;
+}
+
+/** REVIEWS **/
+.review-header {
+	display: flex;
+	align-items: center;
+	margin: 0 32px;
+}
+
+.review-stars {
+	display: flex;
+	align-items: center;
+	margin: 0 8px;
+}
+
+.review-stars span {
+	color: var(--icon-color);
+}
+
+.review-item {
+	border-radius: 8px;
+	margin: 16px 32px;
+	padding: 16px;
+	box-shadow: 0 0px 12px -2px rgba(0, 0, 0, 0.4), 
+					  	0 0px 16px -6px rgba(0, 0, 0, 0.15);
+	transition: 0.2s;
+	cursor: pointer;
+}
+
+.review-item:hover {
+	box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.4),
+							0 4px 16px -6px rgba(0, 0, 0, 0.15);
+}
+
+.review-item-stars {
+	padding-bottom: 8px;
+}
+
+.card {
+	width: clamp(1200px, 50%, 760px);
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	border-radius: 8px;
+	transition: 0.3s;
+	margin-bottom: 100%;
+	margin: 15px auto;
+  }
+  
+  .card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+.container-cards {	
+		padding: 10px 16px;
+	  }
+
+.blank-space {
+	padding-top: 8px;
+}
+
+.payment-methods
+{
+	margin-top: 24px;
+}
+
+.review-text {
+	margin-top: 8px;
+	padding: 8px;
+	border-radius: 8px;
+	resize: none;
+	width: 100%;
+}
+
+.post-btn
+{
+    color: white;
+    background-color: var(--blue);
+    padding: 4px 8px;
+		border: none;
+    border-radius: 8px;
+    transition: 0.2s;
+    cursor: pointer;
+		margin-top: 8px;
+}
+
+.post-btn:hover
+{
+    background-color: rgba(0, 0, 0, 0.5);
+}

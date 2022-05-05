@@ -1,0 +1,42 @@
+<!-- Component that routes to a page from which posts can be created -->
+<app-auth-background></app-auth-background>
+
+<!-- Button that routes back to home page -->
+<a class="button2" routerLink="/home" id="cancel-button">Cancel</a>
+
+<div class="create-container">
+        <form [formGroup]="uploadForm" class="form" (ngSubmit)="upload()">
+                <p class="text">Here you can post all your favorite (or not so favorite) events! </p>
+                <p class="text">These posts can be viewed by others using MyMotown.</p>
+                
+                // Fields for entering event name and description
+                <input type="text" placeholder="Add Event Title" formControlName="eventTitle">
+                <textarea class="description" type="text" placeholder="Add Event Description" formControlName="eventDescription"></textarea>
+ 
+                <div class="footer">
+                        // Drop down containing options for event type/category
+                        <select class="button" formControlName="eventCategory">
+                                <option value="" disabled selected>Choose Event Type</option>
+                                <option value="sports">Sports</option>
+                                <option value="parties">Parties</option>
+                                <option value="dining">Dining</option>
+                                <option value="adventure">Adventure</option>
+                                <option value="other">Other</option>
+                        </select>
+                        // Field for entering the dates/times for the event/location
+                        <input id="time" type="text" placeholder="Dates and Times" formControlName="eventTimes"> 
+                </div>
+
+                <h1 class="header">Select your picture below!</h1>
+
+                // Field that allows for file upload from computer to post pictures
+                <div class="upload-image">
+                        <label for="imagefile">
+                                <img [src]="imageSrc">
+                        </label>
+                        <input id="imagefile" type="file" accept="image/*" (input)="setFile($event)">
+                </div>
+
+                <input class="button" type="submit" value="Post" id="post-button">
+	</form>
+</div>
