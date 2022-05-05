@@ -1,10 +1,17 @@
 {
   "hosting": {
-    "public": "dist/my-mo-town-app",
+    "firebase": "MyMoTown-app",
+    "public": "./dist/my-mo-town-app",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
     ]
   }
 }
