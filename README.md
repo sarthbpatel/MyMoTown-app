@@ -1,5 +1,6 @@
 # **MyMoTown**
-
+Click on the link below to visit the website.
+<br>
 [MyMoTown](https://my-motown-app.web.app/home)
 <br>
 MyMoTown is a webapp where you can find and share social activities, sporting events, or whatever else may be going on in Morgantown.
