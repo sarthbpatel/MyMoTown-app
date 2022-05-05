@@ -46,5 +46,5 @@ How to create a post:
 Rohit Chivukula, Nicholas Kennedy, Carter Kiss, Sarth Patel, Justin Scott, Dylan Smith
 
 
-## **Contribute**
+## **Contribute:**
 Thank you to all the authors for investing your time contributing to our project! 
