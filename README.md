@@ -1,27 +1,48 @@
-# MyMoTownApp
+# **MyMoTown**
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
+[MyMoTown](https://my-motown-app.web.app/home)
+<br>
+MyMoTown is a webapp where you can find and share social activities, sporting events, or whatever else may be going on in Morgantown.
 
-## Development server
+## **Installation**
+**Note**: You do not need to run a local instance of MyMoTown to use it. 
+- This project was generated using AngularCLI 13.2.5.
+- Run `git clone https://github.com/tdevine1/WVU_CS230_2022.01_Group03` to clone a copy of MyMoTown.
+- You may need to `cd` into the `MyMoTown` directory to run the project locally.
+- Run `npm i` to install all the required dependencies.
+- Run `ng build` to build/compile the project.
+- Run `ng serve` to start a local instance of MyMoTown. By default, it will be hosted at `http://localhost:4200/`.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## **Features**
+With MyMoTown, you can:
+- Find and share local social activities, sporting events, resturants, bars, clubs, etc.
+- - This includes an event name, description, pictures, event time(s), and more
+- See how many people are going to an event
+- See the ratings and reviews of events as well as review them yourself
+- View all the events you have created with "Your Events" button
+- Filter for/out events by category, rating, and even by payment types
+- Share an event on Twitter by hitting "Share To Twitter"
+- **PlanMyNight**: Answer questions of what kind of things you're feeling up to and MyMoTown will plan your night for you!
 
-## Code scaffolding
+## **FAQ**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Do I need an account?
+- You don't need an account to simply find things to do.
+- For security reasons, you will need an account if you would like to submit reviews and create your own posts.
 
-## Build
+How to create an account:
+- Click "Sign Up" button on home page or sign-in page
+- Enter an email and password to use for your account
+- And you're done!
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+How to create a post:
+- Click "Create Post" button on home page:
+- Enter information such as the event name, description, etc
+- And you're done!
 
-## Running unit tests
+## **Authors:**
+Rohit Chivukula, Nicholas Kennedy, Carter Kiss, Sarth Patel, Justin Scott, Dylan Smith
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## **Contribute**
+Thank you to all the authors for investing your time contributing to our project! 
